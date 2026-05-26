@@ -51,6 +51,8 @@ const Navbar = () => {
 
         <a
           href="https://wa.me/77718994211"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-gold text-midnight px-5 md:px-6 py-2.5 rounded-full text-[9px] md:text-[10px] font-bold uppercase tracking-wider hover:scale-105 transition-transform flex-shrink-0"
         >
           Тапсырыс беру
@@ -98,7 +100,12 @@ const Hero = () => {
           Әр тортымыз — бұл тек дәм ғана емес, сіз үшін арнайы жасалған нағыз қолөнер туындысы.
         </p>
         <div className="hero-anim">
-          <a href="https://wa.me/77718994211" className="inline-flex items-center gap-4 bg-gold text-midnight px-10 py-5 rounded-full font-bold hover:scale-105 transition-transform shadow-2xl">
+          <a
+            href="https://wa.me/77718994211"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-4 bg-gold text-midnight px-10 py-5 rounded-full font-bold hover:scale-105 transition-transform shadow-2xl"
+          >
             ТАПСЫРЫС БЕРУ <ArrowRight size={20} />
           </a>
         </div>
@@ -146,7 +153,7 @@ const Philosophy = () => (
     <div className="max-w-5xl mx-auto">
       <span className="text-gold text-[10px] font-bold tracking-[0.4em] uppercase block mb-10">Біздің ұстаным</span>
       <h2 className="text-obsidian text-3xl md:text-7xl leading-tight font-bold mb-12">
-        Әр деталь маңызды. <br/>Әр дәм — <span className="text-drama italic text-gold">естелік.</span>
+        Әр деталь маңызды. <br />Әр дәм — <span className="text-drama italic text-gold">естелік.</span>
       </h2>
       <p className="text-slate/70 text-lg md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
         Сарыағашта біз тек торт емес, қуаныш пен эстетика сыйлаймыз. Тек табиғи өнімдер мен авторлық рецепттер.
@@ -157,20 +164,20 @@ const Philosophy = () => (
 
 const Process = () => {
   const steps = [
-    { 
-      title: "Премиум ингредиенттер", 
-      desc: "Біз тек ең үздік өнімдерді пайдаланамыз: жоғары сұрыпты ұн, табиғи қаймақ пен бельгиялық шоколад.", 
-      img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800" 
+    {
+      title: "Премиум ингредиенттер",
+      desc: "Біз тек ең үздік өнімдерді пайдаланамыз: жоғары сұрыпты ұн, табиғи қаймақ пен бельгиялық шоколад.",
+      img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=800"
     },
-    { 
-      title: "Нәзік бисквит", 
-      desc: "Торттың негізі — бұл махаббатпен және шеберлікпен дайындалған, ауызда еритін бисквит.", 
-      img: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=800" 
+    {
+      title: "Нәзік бисквит",
+      desc: "Торттың негізі — бұл махаббатпен және шеберлікпен дайындалған, ауызда еритін бисквит.",
+      img: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&q=80&w=800"
     },
-    { 
-      title: "Мінсіз нәтиже", 
-      desc: "Әрбір торт — эстетика мен дәмнің үйлесімі, сіздің мерекеңіздің сәні.", 
-      img: "/cake7.png" 
+    {
+      title: "Мінсіз нәтиже",
+      desc: "Әрбір торт — эстетика мен дәмнің үйлесімі, сіздің мерекеңіздің сәні.",
+      img: "/cake7.png"
     }
   ];
 
@@ -213,26 +220,40 @@ const Footer = () => (
             SYSTEM OPERATIONAL
           </div>
         </div>
-        
+
         <div className="flex flex-col gap-8">
-           <h4 className="text-gold text-[10px] uppercase tracking-widest font-bold">Сілтемелер</h4>
-           <div className="flex flex-col gap-4">
-             {['Басты бет', 'Мәзір', 'Процесс'].map(l => (
-               <a key={l} href="#" className="text-ivory/60 hover:text-ivory transition-colors">{l}</a>
-             ))}
-           </div>
+          <h4 className="text-gold text-[10px] uppercase tracking-widest font-bold">Сілтемелер</h4>
+          <div className="flex flex-col gap-4">
+            {['Басты бет', 'Мәзір', 'Процесс'].map(l => (
+              <a key={l} href="#" className="text-ivory/60 hover:text-ivory transition-colors">{l}</a>
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-col gap-8">
           <h4 className="text-gold text-[10px] uppercase tracking-widest font-bold">Байланыс</h4>
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-3 text-ivory/60"><MapPin size={16} className="text-gold"/> Сарыағаш</div>
-            <a href="https://instagram.com/merey.bento" className="flex items-center gap-3 text-ivory/60 hover:text-ivory transition-colors"><Instagram size={16} className="text-gold"/> @merey.bento</a>
-            <a href="https://wa.me/77718994211" className="flex items-center gap-3 text-ivory/60 hover:text-ivory transition-colors"><Send size={16} className="text-gold"/> +7 771 899 42 11</a>
+            <div className="flex items-center gap-3 text-ivory/60"><MapPin size={16} className="text-gold" /> Сарыағаш</div>
+            <a
+              href="https://instagram.com/merey.bento"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-ivory/60 hover:text-ivory transition-colors"
+            >
+              <Instagram size={16} className="text-gold" /> @merey.bento
+            </a>
+            <a
+              href="https://wa.me/77718994211"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-ivory/60 hover:text-ivory transition-colors"
+            >
+              <Send size={16} className="text-gold" /> +7 771 899 42 11
+            </a>
           </div>
         </div>
       </div>
-      
+
       <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-ivory/20 text-[10px] tracking-[0.3em] font-mono gap-4">
         <span>© 2026 MEREY.BENTO. SARYAGASH, KAZAKHSTAN</span>
         <span>PREMIUM BAKERY EXPERIENCE</span>
@@ -251,17 +272,22 @@ export default function App() {
         <Gallery />
         <Philosophy />
         <Process />
-        
+
         <section className="py-40 px-10 bg-ivory text-center">
-            <div className="max-w-2xl mx-auto">
-              <h2 className="text-drama text-5xl md:text-7xl mb-8 text-obsidian leading-tight">Тәтті таңдау <br/>жасауға дайынсыз ба?</h2>
-              <p className="text-slate/70 mb-12 text-lg font-light leading-relaxed">
-                Біз сіздің тапсырысыңызды ең жоғары деңгейде орындаймыз. Бізге WhatsApp арқылы жазыңыз.
-              </p>
-              <a href="https://wa.me/77718994211" className="bg-gold text-midnight px-12 py-6 rounded-full text-xl font-bold hover:scale-105 transition-transform inline-block shadow-2xl shadow-gold/20">
-                  WHATSAPP-ҚА ӨТУ
-              </a>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-drama text-5xl md:text-7xl mb-8 text-obsidian leading-tight">Тәтті таңдау <br />жасауға дайынсыз ба?</h2>
+            <p className="text-slate/70 mb-12 text-lg font-light leading-relaxed">
+              Біз сіздің тапсырысыңызды ең жоғары деңгейде орындаймыз. Бізге WhatsApp арқылы жазыңыз.
+            </p>
+            <a
+              href="https://wa.me/77718994211"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gold text-midnight px-12 py-6 rounded-full text-xl font-bold hover:scale-105 transition-transform inline-block shadow-2xl shadow-gold/20"
+            >
+              WHATSAPP-ҚА ӨТУ
+            </a>
+          </div>
         </section>
       </main>
       <Footer />
